@@ -25,6 +25,15 @@ Converte a interface de uma classe em outra interface esperada pelos clientes, p
 - Reutilizar classes existentes que não podem ser modificadas
 - Criar uma camada de compatibilidade entre diferentes sistemas
 
+### [`Facade`](./structural/Facade.ts)
+
+Simplifica o uso de subsistemas complexos, fornecendo uma interface única e de alto nível para o cliente interagir com vários componentes internos.
+
+**Quando usar:**
+- Reduzir a complexidade de integração entre sistemas
+- Fornecer uma interface mais simples para operações comuns
+- Encapsular dependências e detalhes de implementação de subsistemas
+
 ## 📖 Referências
 
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
