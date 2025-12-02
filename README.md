@@ -34,6 +34,20 @@ Simplifica o uso de subsistemas complexos, fornecendo uma interface única e de 
 - Fornecer uma interface mais simples para operações comuns
 - Encapsular dependências e detalhes de implementação de subsistemas
 
+### [`Flyweight`](./structural/Flyweight.ts)
+
+Reduz o consumo de memória compartilhando partes comuns do estado entre múltiplos objetos, em vez de manter todos os dados em cada objeto.
+
+**Quando usar:**
+- Aplicação precisa gerar um grande número de objetos similares
+- Armazenamento de objetos consome muita memória
+- A maioria dos estados dos objetos pode ser tornada extrínseca
+- Muitos objetos podem ser substituídos por poucos objetos compartilhados
+
+**Palavras-chave:**
+- Estado Intrínseco: Parte do estado que é compartilhada entre múltiplos objetos e armazenada no flyweight.
+- Estado Extrínseco: Parte do estado que é específica para cada objeto e não é compartilhada, sendo armazenada fora do flyweight.
+
 ## 📖 Referências
 
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
