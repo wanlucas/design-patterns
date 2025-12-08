@@ -48,6 +48,16 @@ Reduz o consumo de memória compartilhando partes comuns do estado entre múltip
 - Estado Intrínseco: Parte do estado que é compartilhada entre múltiplos objetos e armazenada no flyweight.
 - Estado Extrínseco: Parte do estado que é específica para cada objeto e não é compartilhada, sendo armazenada fora do flyweight.
 
+### [`Proxy`](./structural/Proxy.ts)
+
+Fornece um substituto ou representante de outro objeto para controlar o acesso a ele, adicionando funcionalidades como lazy loading, controle de acesso ou logging.
+
+**Quando usar:**
+- Controlar o acesso a um objeto (proteção)
+- Adiar a criação de objetos pesados até que sejam realmente necessários (virtual proxy)
+- Executar ações antes ou depois de acessar o objeto real
+- Implementar cache ou log de operações
+
 ## 📖 Referências
 
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
