@@ -58,6 +58,20 @@ Fornece um substituto ou representante de outro objeto para controlar o acesso a
 - Executar ações antes ou depois de acessar o objeto real
 - Implementar cache ou log de operações
 
+## 🎭 Padrões Comportamentais (Behavioral Patterns)
+
+Os padrões comportamentais lidam com algoritmos e a atribuição de responsabilidades entre objetos, descrevendo não apenas padrões de objetos ou classes, mas também padrões de comunicação entre eles.
+
+### [`Chain of Responsibility`](./behavioral/ChainOfResponsibility.ts)
+
+Evita acoplar o remetente de uma solicitação ao seu destinatário, dando a mais de um objeto a chance de tratar a solicitação. Encadeia os objetos receptores e passa a solicitação ao longo da cadeia até que um objeto a trate.
+
+**Quando usar:**
+- Mais de um objeto pode tratar uma solicitação e o tratador não é conhecido a priori
+- Deseja emitir uma solicitação para um dentre vários objetos sem especificar explicitamente o receptor
+- O conjunto de objetos que pode tratar uma solicitação deve ser especificado dinamicamente
+- Implementar sistemas de validação, aprovação ou suporte escalonado
+
 ## 📖 Referências
 
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
