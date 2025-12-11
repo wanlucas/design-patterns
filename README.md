@@ -72,6 +72,16 @@ Evita acoplar o remetente de uma solicitação ao seu destinatário, dando a mai
 - O conjunto de objetos que pode tratar uma solicitação deve ser especificado dinamicamente
 - Implementar sistemas de validação, aprovação ou suporte escalonado
 
+### [`Observer`](./behavioral/Observer.ts)
+
+Define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.
+
+**Quando usar:**
+- Uma abstração tem dois aspectos, um dependente do outro
+- Uma mudança em um objeto requer mudanças em outros, mas você não sabe quantos objetos precisam ser mudados
+- Um objeto deve notificar outros sem fazer suposições sobre quem são esses objetos
+- Implementar sistemas de eventos, notificações ou pub-sub
+
 ## 📖 Referências
 
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
