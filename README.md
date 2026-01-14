@@ -62,6 +62,16 @@ Fornece um substituto ou representante de outro objeto para controlar o acesso a
 
 Os padrões comportamentais lidam com algoritmos e a atribuição de responsabilidades entre objetos, descrevendo não apenas padrões de objetos ou classes, mas também padrões de comunicação entre eles.
 
+### [`Command`](./behavioral/Command.ts)
+
+Encapsula uma solicitação como um objeto, permitindo parametrizar clientes com diferentes solicitações, enfileirá-las ou registrar operações, além de suportar operações reversíveis.
+
+**Quando usar:**
+- Precisa separar o objeto que emite a solicitação do que a executa
+- Deseja suportar operações desfazíveis, filas de comandos ou macros
+- Quer registrar histórico de operações ou executar comandos remotamente
+- Deseja compor comandos simples em rotinas complexas
+
 ### [`Chain of Responsibility`](./behavioral/ChainOfResponsibility.ts)
 
 Evita acoplar o remetente de uma solicitação ao seu destinatário, dando a mais de um objeto a chance de tratar a solicitação. Encadeia os objetos receptores e passa a solicitação ao longo da cadeia até que um objeto a trate.
@@ -81,6 +91,7 @@ Define uma dependência um-para-muitos entre objetos, de modo que quando um obje
 - Uma mudança em um objeto requer mudanças em outros, mas você não sabe quantos objetos precisam ser mudados
 - Um objeto deve notificar outros sem fazer suposições sobre quem são esses objetos
 - Implementar sistemas de eventos, notificações ou pub-sub
+Os padrões comportamentais lidam com algoritmos e a atribuição de responsabilidades entre objetos, definindo como eles se comunicam.
 
 ## 📖 Referências
 
